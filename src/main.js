@@ -5,6 +5,9 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui' // 引入element-ui
 import 'element-ui/lib/theme-default/index.css'
+import Axios from 'axios'
+
+Vue.prototype.$http = Axios
 Vue.use(ElementUI) // Vue全局使用
 
 Vue.config.productionTip = false
